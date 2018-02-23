@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "View";
+}
+
+<h3 id="count"></h3>
+
+<script>
+    var count = sessionStorage.getItem('count');
+    if (count) {
+        count++
+    } else {
+        count = 1;
+    }
+    sessionStorage.setItem('count', count);
+    document.getElementById('count').innerHTML = 'The sessionStorage page is visited ' + count + ' times';
+
+</script>
+
+
