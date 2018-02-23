@@ -40,8 +40,7 @@ namespace RequestPipeLine
             context.PreRequestHandlerExecute += GetEventHandler("PreRequestHandlerExecute");
             context.PreSendRequestContent += GetEventHandler("PreSendRequestContent");
             context.PreSendRequestHeaders += GetEventHandler("PreSendRequestHeaders");
-            context.ReleaseRequestState += GetEventHandler("ReleaseRequestState");
-            context.RequestCompleted += GetEventHandler("RequestCompleted");
+            context.ReleaseRequestState += GetEventHandler("ReleaseRequestState");           
             context.ResolveRequestCache += GetEventHandler("ResolveRequestCache");
             context.UpdateRequestCache += GetEventHandler("UpdateRequestCache");
         }
